@@ -5,7 +5,6 @@ const UserDetails = () => {
     const { id } = useParams();
     const { data: note, error, isPending } = useFetch("http://localhost:3000/notes/" + id);
 
-
     return (
         <>
             <section className='note-details'>
